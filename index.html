@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicios con Bulma css</title>
+  <link rel="stylesheet" href="css/main.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+  <nav class="navbar  is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item is-active is-tab">
+          Home
+        </a>
+
+        <a class="navbar-item ">
+          Portafolio
+        </a>
+
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-dark is-outlined">
+              CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8-desktop is-offset-2-desktop">
+
+          <div class="columns is-desktop">
+            <div class="column">
+              <form class="box">
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="e.g Alex Smith">
+                  </div>
+                  <p class="help">This is a help text</p>
+                </div>
+                <div class="field">
+                  <p class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-lock"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="field is-grouped">
+                  <p class="control">
+                    <button type="submit" class="button is-success">
+                      Login
+                    </button>
+                  </p>
+                  <p class="control">
+                    <button type="reset" class="button is-light">
+                      Reset
+                    </button>
+                  </p>
+                </div>
+              </form>
+            </div>
+            <div class="column">
+              <form class="box">
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">From</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input class="input" type="text" placeholder="Name">
+                        <span class="icon is-small is-left">
+                          <i class="fa fa-user"></i>
+                        </span>
+                      </p>
+                    </div>
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left has-icons-right">
+                        <input class="input is-success" type="email" placeholder="Email" >
+                        <span class="icon is-small is-left">
+                          <i class="fa fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                          <i class="fa fa-check"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Department</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field is-narrow">
+                      <div class="control">
+                        <div class="select is-fullwidth">
+                          <select>
+                            <option>Business development</option>
+                            <option>Marketing</option>
+                            <option>Sales</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Subject</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity">
+                      </div>
+                      <p class="help is-danger">
+                        This field is required
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="field is-horizontal">
+                  <div class="field-label">
+                    <!-- Left empty for spacing -->
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <button class="button is-primary">
+                          Send message
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <div class="columns is-desktop">
+            <div class="column">
+              <article class="message is-danger">
+                <div class="message-header">
+                  <p>Danger</p>
+                  <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>,
+                  tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam
+                  gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>
+                </div>
+              </article>
+            </div>
+            <div class="column">
+              <article class="message is-warning">
+                <div class="message-header">
+                  <p>Warning</p>
+                  <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>,
+                  tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
+                  purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="columns is-desktop">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                    <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br>
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <a href="#" class="card-footer-item">Save</a>
+                  <a href="#" class="card-footer-item">Edit</a>
+                  <a href="#" class="card-footer-item">Delete</a>
+                </footer>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    title
+                  </p>
+                </header>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">John Smith</p>
+                      <p class="subtitle is-6">@johnsmith</p>
+                    </div>
+                  </div>
+
+                  <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-desktop">
+            <div class="column">
+              <form class="box">
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input class="input" type="email" placeholder="e.g. alex@example.com">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Password</label>
+                  <div class="control">
+                    <input class="input" type="password" placeholder="********">
+                  </div>
+                </div>
+
+                <button class="button is-primary">Sign in</button>
+              </form>
+            </div>
+            <div class="column">
+              <div class="box">
+                <span class="icon-text has-text-info">
+                  <span class="icon has-background-warning">
+                    <i class="fa fa-info-circle"></i>
+                  </span>
+                  <span>Info</span>
+                </span>
+
+                <span class="icon-text has-text-success">
+                  <span class="icon">
+                    <i class="fa fa-check-square"></i>
+                  </span>
+                  <span>Success</span>
+                </span>
+
+                <span class="icon-text has-text-warning">
+                  <span class="icon">
+                    <i class="fa fa-exclamation-triangle"></i>
+                  </span>
+                  <span>Warning</span>
+                </span>
+
+                <span class="icon-text has-text-danger">
+                  <span class="icon">
+                    <i class="fa fa-ban"></i>
+                  </span>
+                  <span>Danger</span>
+                </span>
+
+                <button class="button is-danger is-outlined " onclick="verModal()">
+                  Abrir Modal
+                </button>
+
+                <div class="modal">
+                  <div class="modal-background"></div>
+                  <div class="modal-content">
+                    <p class="image is-4by3">
+                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
+                    </p>
+                  </div>
+                  <button class="modal-close is-large" onclick="cerrarModal()" aria-label="close"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-desktop">
+            <div class="column">
+              <div class="table-container">
+                <table class="table is-striped">
+                  <thead>
+                    <tr>
+                      <th><abbr title="Position">Pos</abbr></th>
+                      <th>Team</th>
+                      <th><abbr title="Played">Pld</abbr></th>
+                      <th><abbr title="Won">W</abbr></th>
+                      <th><abbr title="Drawn">D</abbr></th>
+                      <th><abbr title="Lost">L</abbr></th>
+                      <th><abbr title="Goals for">GF</abbr></th>
+                      <th><abbr title="Goals against">GA</abbr></th>
+                      <th><abbr title="Goal difference">GD</abbr></th>
+                      <th><abbr title="Points">Pts</abbr></th>
+                      <th>Qualification or relegation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C."
+                          title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
+                      </td>
+                      <td>38</td>
+                      <td>23</td>
+                      <td>12</td>
+                      <td>3</td>
+                      <td>68</td>
+                      <td>36</td>
+                      <td>+32</td>
+                      <td>81</td>
+                      <td>Qualification for the <a
+                          href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"
+                          title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C.">Arsenal</a></td>
+                      <td>38</td>
+                      <td>20</td>
+                      <td>11</td>
+                      <td>7</td>
+                      <td>65</td>
+                      <td>36</td>
+                      <td>+29</td>
+                      <td>71</td>
+                      <td>Qualification for the <a
+                          href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"
+                          title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C."
+                          title="Tottenham Hotspur F.C.">Tottenham Hotspur</a></td>
+                      <td>38</td>
+                      <td>19</td>
+                      <td>13</td>
+                      <td>6</td>
+                      <td>69</td>
+                      <td>35</td>
+                      <td>+34</td>
+                      <td>70</td>
+                      <td>Qualification for the <a
+                          href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"
+                          title="2016–17 UEFA Champions League">Champions League group stage</a></td>
+                    </tr>
+                    <tr>
+                      <th>4</th>
+                      <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C."
+                          title="Manchester City F.C.">Manchester City</a></td>
+                      <td>38</td>
+                      <td>19</td>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>71</td>
+                      <td>41</td>
+                      <td>+30</td>
+                      <td>66</td>
+                      <td>Qualification for the <a
+                          href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round"
+                          title="2016–17 UEFA Champions League">Champions League play-off round</a></td>
+                    </tr>
+                    <tr>
+                      <th>5</th>
+                      <td><a href="https://en.wikipedia.org/wiki/Manchester_United_F.C."
+                          title="Manchester United F.C.">Manchester United</a></td>
+                      <td>38</td>
+                      <td>19</td>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>49</td>
+                      <td>35</td>
+                      <td>+14</td>
+                      <td>66</td>
+                      <td>Qualification for the <a
+                          href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage"
+                          title="2016–17 UEFA Europa League">Europa League group stage</a></td>
+                    </tr>
+                    <tr>
+                      <th>6</th>
+                      <td><a href="https://en.wikipedia.org/wiki/Southampton_F.C."
+                          title="Southampton F.C.">Southampton</a></td>
+                      <td>38</td>
+                      <td>18</td>
+                      <td>9</td>
+                      <td>11</td>
+                      <td>59</td>
+                      <td>41</td>
+                      <td>+18</td>
+                      <td>63</td>
+                      <td>Qualification for the <a
+                          href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage"
+                          title="2016–17 UEFA Europa League">Europa League group stage</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer has-text-centered">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8-desktop is-offset-2-desktop">
+          <p>
+            <strong class="has-text-weight-semibold">
+              <a href="https://ojacome.github.io/portafolio" target="_blank">By Jesús Olmedo</a>
+            </strong>
+          </p>
+          <p style="margin-top: 1rem;">
+            <a href="http://bulma.io">
+              <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="lib/main.js"></script>
+</body>
+
+</html>
